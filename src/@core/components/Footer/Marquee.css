@@ -1,0 +1,23 @@
+.marquee-container {
+  width: 90%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  color: red;
+  text-transform: uppercase;
+  font-size: 20px;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
